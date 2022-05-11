@@ -6,18 +6,17 @@
 }
 
 body {
-    background-color: #F3F5FC; 
+    background-color: #fecff2; 
+    background-image: url("https://cdn.ome.lt/PRsafLuva64CpAGT7oRCIu3orfY=/1200x630/smart/extras/conteudos/princesa-jujuba-lady-iris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+   
 }
 .main{
-position: static;
-width: 120px;
-height: 48px;
-left: 0px;
-top: 0px;
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 40px 0px;
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
 }
 
 .input-texto{
@@ -25,13 +24,13 @@ margin: 40px 0px;
 }
 .escreva{
 position: static;
-width: 336px;
-height: 48px;
+width: 320px;
+height: 49px;
 left: 0px;
 top: 74px;
 font-family: 'Inter';
 font-style: normal;
-font-weight: 400;
+font-weight: 340;
 font-size: 16px;
 line-height: 150%;
 text-align: center;
@@ -43,14 +42,14 @@ flex-grow: 0;
 margin: 16px 0px;
 }
 
-/*.mensagem {
+.mensagem {
     position: relative;
     margin-top: 20px;
-    margin-left: 90px;
-    background-image: url("/img/boneco.jpg");
+    margin-bottom: 60px;
+    background-image: url(/img/boneco.jpg);
     background-repeat: no-repeat;
 }
-*/
+
 
 
 .botoes{
@@ -59,6 +58,12 @@ margin: 16px 0px;
     margin-top: 20px;
     align-items: flex-start;
     gap: 8px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 600px
+    
 }
 .encriptar {
     background-color: #0A3871;
@@ -66,129 +71,133 @@ margin: 16px 0px;
     border-radius: 24px;
 
 }
+.encriptar:hover{
+    background: rgb(220, 8, 205);
+    cursor: pointer;
+    transition: .3s ease all;
+}
 
 .desencriptar {
     border: 1px solid #0A3871;
     background-color:  #D8DFE8;;
     color: #0A3871;;
     border-radius: 24px;
+    
 }
 
-
+.desencriptar:hover{
+    background: rgb(220, 8, 205);
+    cursor: pointer;
+    transition: .3s ease all;
+}
 
 .informacao {
-    font-size: 15px;
-   
+font-size: 15px;
+}
 
+#info{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+position: absolute;
+width: 252px;
+height: 20px;
+left: 100px;
 }
 
 .copiar{
     border: 1px solid #0A3871;
     background-color:  #D8DFE8;;
     color: #0A3871;;
-    border-radius: 24px;
+    border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copiar:hover{
+    background: rgb(220, 8, 205);
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
 
 .lado2{
 position: absolute;
 width: 400px;
-height: 944px;
+height: 700px;
 left: 1000px;
 top: 40px;
 background: #FFFFFF;
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
+
 }
 
-boneco{
+/*boneco{
 position: absolute;
 width: 336px;
 height: 304px;
 left: 1032px;
 top: 283px;
-}
+}*/
 
 .texto1{
-position: static;
-width: 336px;
-height: 58px;
-left: 0px;
-top: 0px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-/* or 29px */
-
-text-align: center;
-
-/* Gray/gray-500 */
-
-color: #343A40;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 16px 0px;
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-p{
-position: static;
-width: 336px;
-height: 48px;
-left: 0px;
-top: 74px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-/* or 24px */
-
-text-align: center;
-
-/* Gray/gray-400 */
-
-color: #495057;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-margin: 16px 0px;
+.texto2{
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(64, 0, 255);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+ }
 
 
 
+ @media screen and (max-width: 480px) {
+	.input-texto, .escreva, .botoes, .informacao, .lado2 {
+		width: auto; 
+  }
+    header {
+		text-align: center;
+	}
+    
+	main {
+		position: static;
+	}
+	.texto1, .texto2, .mensagem {
+		width: 100%;
+	}
+}
