@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -13,18 +14,18 @@
 </head>
 <body>
     <header>
-        <img src="/img/logo.png" alt="Logo da alura com a inicial da letra a" class="logo" onclick="home()">
+        <img src="/img/logo.png" alt="Logo da alura com a inicial da letra a" class="logo">
     </header>
     <main class="main">
         <section>
-            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto" ></textarea>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
             <div id="info">
                 <img src="/img/!.png" class="img-alerta">
                 <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>  
             </div>
             <div class="botoes">
-                <button type="button" class="encriptar" onclick="btnEncriptar()">Criptografia</button>
-                <button type="button" class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
+                <button  class="encriptar">Criptografia</button>
+                <button  class="desencriptar">Descriptografia</button> 
             </div>
         </section>        
            
@@ -34,19 +35,23 @@
                     <textarea class="mensagem" cols="15" rows="6"></textarea>
                     <!-- <img  id="boneco" src="/img/message.svg" alt="boneco com uma lupa na mão olhando o diamante"> -->
                     <p class="texto1">Nenhuma mensagem encontrada</p>
-                    <p class="texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    <button class="copiar" onclick="btn">Copiar</button>
+                    <p class="texto2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+                     <button class="copiar">Copiar</button>
+                     <button class="copiar">Colar</button> 
+                    
                 </div>
              </section>    
     </main>
      
-    <br>
+<br>
         
-    <footer class="footer">
-        <h6 class="informacao">Desenvolvido por Christiane Gozza - 2022</h6>
-    </footer>
+     <footer class="footer">
+          Desenvolvido por Christiane Gozza - 2022
+        <a href="https://github.com/chritianegozza" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/christiane-gozza/" class="fa fa-linkedin"></a>
+    </footer> 
 
- 
+  
    
 </body>
 </html>
