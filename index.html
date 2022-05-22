@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Desafio Oracle</title>
 </head>
 <body>
@@ -18,26 +17,26 @@
     </header>
     <main class="main">
         <section>
-            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
-            <div id="info">
+            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
+            <div class="info">
                 <img src="/img/!.png" class="img-alerta">
                 <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>  
             </div>
             <div class="botoes">
-                <button  class="encriptar">Criptografia</button>
-                <button  class="desencriptar">Descriptografia</button> 
+                <button  class="encriptar" onclick="btnEncriptar()">Criptografia</button>
+                <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografia</button> 
             </div>
         </section>        
            
             <section class="escreva">
                 
                 <div class="lado2">
-                    <textarea class="mensagem" cols="15" rows="6"></textarea>
+                    <textarea class="message" cols="15" rows="6"></textarea>
                     <!-- <img  id="boneco" src="/img/message.svg" alt="boneco com uma lupa na mão olhando o diamante"> -->
                     <p class="texto1">Nenhuma mensagem encontrada</p>
                     <p class="texto2"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-                     <button class="copiar">Copiar</button>
-                     <button class="copiar">Colar</button> 
+                     <button class="copiar" onclick="btnCopy()">Copiar</button>
+                     <button class="colar"  onclick="copiedText()" >Colar</button> 
                     
                 </div>
              </section>    
@@ -52,6 +51,6 @@
     </footer> 
 
   
-   
+    <script src="script.js"></script>
 </body>
 </html>

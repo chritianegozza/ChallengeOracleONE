@@ -19,7 +19,7 @@ body {
     margin-bottom: 50px;
 }
 
-.input-texto{
+.input{
     margin-top: 90px;
 }
 .escreva{
@@ -42,7 +42,7 @@ flex-grow: 0;
 margin: 16px 0px;
 }
 
-.mensagem {
+.message {
     position: relative;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -95,7 +95,7 @@ margin: 16px 0px;
 font-size: 15px;
 }
 
-#info{
+.info{
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -115,6 +115,20 @@ left: 100px;
 }
 
 .copiar:hover{
+    background: rgb(220, 8, 205);
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+
+.colar{
+    border: 1px solid #0A3871;
+    background-color:  #D8DFE8;;
+    color: #0A3871;;
+    border-radius: 20px;
+}
+
+.colar:hover{
     background: rgb(220, 8, 205);
     transform: scale(1.2);
     cursor: pointer;
@@ -207,7 +221,7 @@ border-radius: 32px;
 	main {
 		position: static;
 	}
-	.texto1, .texto2, .mensagem {
+	.texto1, .texto2, .message {
 		width: 100%;
 	}
 }
